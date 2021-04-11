@@ -25,24 +25,27 @@ time: 5 s
 memory time: 0 ns
 parallel: 1
 inputs: none specified
-Estimated total run time: 28 s
+Estimated total run time: 35 s
 
 Benchmarking Enum.reverse/1...
 Benchmarking Reversing.clever10/1...
 Benchmarking Reversing.clever5/1...
 Benchmarking Reversing.naive/1...
+Benchmarking use Erlang, dude...
 
 Name                           ips        average  deviation         median         99th %
-Reversing.clever10/1        1.62 K        0.62 ms    ±70.55%        0.41 ms        1.58 ms
-Enum.reverse/1              1.60 K        0.62 ms    ±71.05%        0.40 ms        1.59 ms
-Reversing.clever5/1         0.74 K        1.35 ms    ±18.27%        1.50 ms        1.97 ms
-Reversing.naive/1           0.47 K        2.12 ms    ±13.41%        2.25 ms        3.03 ms
+use Erlang, dude            1.62 K      617.41 μs    ±71.12%         403 μs     1589.67 μs
+Reversing.clever10/1        1.61 K      622.69 μs    ±71.12%         403 μs        1586 μs
+Enum.reverse/1              1.60 K      624.05 μs    ±68.15%         411 μs     1579.78 μs
+Reversing.clever5/1         0.75 K     1341.76 μs    ±18.42%        1501 μs     1877.73 μs
+Reversing.naive/1           0.48 K     2104.86 μs    ±12.54%        2259 μs     2856.24 μs
 
 Comparison: 
-Reversing.clever10/1        1.62 K
-Enum.reverse/1              1.60 K - 1.01x slower +0.00602 ms
-Reversing.clever5/1         0.74 K - 2.18x slower +0.73 ms
-Reversing.naive/1           0.47 K - 3.43x slower +1.50 ms
+use Erlang, dude            1.62 K
+Reversing.clever10/1        1.61 K - 1.01x slower +5.28 μs
+Enum.reverse/1              1.60 K - 1.01x slower +6.64 μs
+Reversing.clever5/1         0.75 K - 2.17x slower +724.35 μs
+Reversing.naive/1           0.48 K - 3.41x slower +1487.45 μs
 
 ```
 

@@ -6,5 +6,6 @@ Benchee.run(
     "Reversing.naive/1" => fn -> Reversing.naive(list) end,
     "Reversing.clever5/1" => fn -> Reversing.clever5(list) end,
     "Reversing.clever10/1" => fn -> Reversing.clever10(list) end,
+    "use Erlang, dude" => fn -> :lists.reverse(list) end
   }
 )

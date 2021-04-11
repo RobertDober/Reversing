@@ -17,6 +17,10 @@ defmodule ReversingTest do
     test_reverse(&Enum.reverse/1)
   end
 
+  test "Erlang" do
+    test_reverse(&:lists.reverse/1)
+  end
+
   defp test_reverse(fun) do
     ((1..10 |> Enum.into([])) ++ [0, 20, 90, 2000])
     |> Enum.each(fn n ->
