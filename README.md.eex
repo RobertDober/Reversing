@@ -1,0 +1,22 @@
+# Reversing
+
+Musings about things we believe but do not know
+
+Here is the believe:
+
+`Enum.reverse` is better than anything we can do in Elixir ourselves
+
+And here is the prove (or not?)
+
+
+## Benchmarks
+
+```
+<%= xtra.task "run", ["benches/reverse_benchmark.exs"] %>
+```
+
+Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
+and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
+be found at [https://hexdocs.pm/reversing](https://hexdocs.pm/reversing).
+
+SPDX-License-Identifier: Apache-2.0
